@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+
+   <link rel="stylesheet" href="/assets/css/base/reset.css">
+   <link rel="stylesheet" href="/assets/css/base/flex.css">
+   <link rel="stylesheet" href="/assets/css/base/estilo-header-footer.css">
+   <link rel="stylesheet" href="/assets/css/base/background.css">
+
+   <link rel="stylesheet" href="/assets/css/cabecalho/cabecalho.css">
+
+   <link rel="stylesheet" href="/assets/css/secao-principal/secao-principal.css">
+
+   <link rel="stylesheet" href="/assets/css/secao-principal/formulario.css">
+   <link rel="stylesheet" href="/assets/css/secao-principal/formulario-inputs.css">
+   <link rel="stylesheet" href="/assets/css/secao-principal/formulario-legenda.css">
+   <link rel="stylesheet" href="/assets/css/secao-principal/formulario-botao.css">
+
+   <link rel="stylesheet" href="/assets/css/rodape/rodape.css">
+</head>
+<body>
+   <header class="cabecalho">
+      <h1 class="cabecalho__titulo">Lista Telefônica</h1>
+   </header>
+
+   <main class="secao-principal flex column">
+
+      <section class="secao-principal__formulario flex">
+         <form action="" class="flex">
+            <div class="secao-principal__formulario__container flex column">
+               <label for="input-nome" class="secao-principal__formulario__container__label">Nome</label>
+               <input type="text" id="input-nome" class="text secao-principal__formulario__container__input">
+            </div>
+
+            <div class="secao-principal__formulario__container flex column">
+               <label for="input-telefone" class="secao-principal__formulario__container__label">Telefone</label>
+               <input type="tel" id="input-telefone" class="text secao-principal__formulario__container__input">
+            </div>
+         </form>
+
+         <button class="secao-principal__formulario__botao">Salvar</button>
+      </section>
+
+         <section class="secao-principal__contatos">
+            <ul class="lista__contatos">
+
+            </ul>
+         </section>
+      
+   </main>
+
+   <footer class="rodape">
+      <h3 class="rodape__direitos">Todos os direitos reservados.</h3>
+   </footer>
+</body>
+
+<script src="/scripts.js"></script>
+</html>

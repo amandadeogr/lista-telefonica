@@ -1,0 +1,6 @@
+.secao-principal__formulario {
+   justify-content: space-around;
+   align-items: center;
+   margin: auto;
+   width: fit-content;
+}

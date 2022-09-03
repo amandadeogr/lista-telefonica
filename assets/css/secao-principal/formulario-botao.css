@@ -1,0 +1,9 @@
+.secao-principal__formulario__botao {
+   text-align: center;
+   margin-top: 1rem;
+   padding: .4rem 2rem;
+}
+
+.secao-principal__formulario__botao:hover {
+   cursor: pointer;
+}
