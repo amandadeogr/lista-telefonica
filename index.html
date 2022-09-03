@@ -42,13 +42,23 @@
             </div>
          </form>
 
-         <button class="secao-principal__formulario__botao">Salvar</button>
+         <button onclick="contato.cadastrar()" class="secao-principal__formulario__botao">Salvar</button>
       </section>
 
          <section class="secao-principal__contatos">
-            <ul class="lista__contatos">
 
-            </ul>
+            <input type="text" id="myInput" class="secao-principal__contatos__pesquisa" onkeyup="contato.listarTabela()" placeholder="Digite o nome de seu contato" title="Filtro de Nomes">
+
+            <table class="secao-principal__contatos__tabela">
+               <thead id="thead" class="secao-principal__contatos__tabela__titulo">
+                   <td class="secao-principal__contatos__tabela__titulo__item">Nome</td>
+                   <td class="secao-principal__contatos__tabela__titulo__item">Telefone para contato</td>
+                   <td class="secao-principal__contatos__tabela__titulo__item">Ações</td>
+               </thead>
+       
+               <tbody id="tbody" class="secao-principal__contatos__tabela__corpo">
+               </tbody>
+            </table>
          </section>
       
    </main>
@@ -58,5 +68,6 @@
    </footer>
 </body>
 
-<script src="/scripts.js"></script>
+<script src="js/scripts.js"></script>
+<script src="js/contato.js"></script>
 </html>
