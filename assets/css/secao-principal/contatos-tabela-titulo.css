@@ -1,0 +1,11 @@
+.secao-principal__contatos__tabela__titulo {
+   background: #5c64a3;
+   background: linear-gradient(90deg, #5c64a3 21%, #5f6bce 49%, #5c64a3 82%);
+   border: 1px solid #838bf6;
+   color: white;
+}
+
+table tr, table td {
+   padding: 1rem;
+   text-align: center;
+ }

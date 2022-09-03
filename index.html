@@ -6,6 +6,8 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Document</title>
 
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
    <link rel="stylesheet" href="/assets/css/base/reset.css">
    <link rel="stylesheet" href="/assets/css/base/flex.css">
    <link rel="stylesheet" href="/assets/css/base/estilo-header-footer.css">
@@ -19,8 +21,18 @@
    <link rel="stylesheet" href="/assets/css/secao-principal/formulario-inputs.css">
    <link rel="stylesheet" href="/assets/css/secao-principal/formulario-legenda.css">
    <link rel="stylesheet" href="/assets/css/secao-principal/formulario-botao.css">
+      <link rel="stylesheet" href="/assets/css/secao-principal/formulario-container.css">
 
-   <link rel="stylesheet" href="/assets/css/rodape/rodape.css">
+
+   <link rel="stylesheet" href="/assets/css/secao-principal/contato.css">
+   <link rel="stylesheet" href="/assets/css/secao-principal/contatos-pesquisa.css">
+   <link rel="stylesheet" href="/assets/css/secao-principal/contatos-tabela.css">
+   <link rel="stylesheet" href="/assets/css/secao-principal/contatos-tabela-titulo.css">
+   <link rel="stylesheet" href="/assets/css/secao-principal/contatos-tabela-corpo.css">
+
+
+   <link rel="stylesheet" href="/assets/css/rodape/rodape.css">   
+   <link rel="stylesheet" href="/assets/css/rodape/rodape-direitos-autorais.css">
 </head>
 <body>
    <header class="cabecalho">
@@ -33,38 +45,39 @@
          <form action="" class="flex">
             <div class="secao-principal__formulario__container flex column">
                <label for="input-nome" class="secao-principal__formulario__container__label">Nome</label>
-               <input type="text" id="input-nome" class="text secao-principal__formulario__container__input">
+               <input type="text" id="input-nome" class="text secao-principal__formulario__container__input" placeholder="Nome de seu contato">
             </div>
 
             <div class="secao-principal__formulario__container flex column">
                <label for="input-telefone" class="secao-principal__formulario__container__label">Telefone</label>
-               <input type="tel" id="input-telefone" class="text secao-principal__formulario__container__input">
+               <input type="tel" id="input-telefone" class="text secao-principal__formulario__container__input" placeholder="(22) 99999-9999">
             </div>
          </form>
 
          <button onclick="contato.cadastrar()" class="secao-principal__formulario__botao">Salvar</button>
       </section>
 
-         <section class="secao-principal__contatos">
+      <section class="secao-principal__contatos flex column">
 
             <input type="text" id="myInput" class="secao-principal__contatos__pesquisa" onkeyup="contato.listarTabela()" placeholder="Digite o nome de seu contato" title="Filtro de Nomes">
 
             <table class="secao-principal__contatos__tabela">
                <thead id="thead" class="secao-principal__contatos__tabela__titulo">
                    <td class="secao-principal__contatos__tabela__titulo__item">Nome</td>
-                   <td class="secao-principal__contatos__tabela__titulo__item">Telefone para contato</td>
+                   <td class="secao-principal__contatos__tabela__titulo__item">Telefone</td>
                    <td class="secao-principal__contatos__tabela__titulo__item">Ações</td>
                </thead>
        
                <tbody id="tbody" class="secao-principal__contatos__tabela__corpo">
+               
                </tbody>
             </table>
-         </section>
+      </section>
       
    </main>
 
    <footer class="rodape">
-      <h3 class="rodape__direitos">Todos os direitos reservados.</h3>
+      <p class="rodape__direitos-autorais">Todos os direitos reservados.</p>
    </footer>
 </body>
 

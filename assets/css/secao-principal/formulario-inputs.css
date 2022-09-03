@@ -1,7 +1,6 @@
 .secao-principal__formulario__container__input {
-   margin-right: 1rem;
+   border: #ccc;
+   border-radius: 5px;
    padding: .5rem 1rem;
-   position: relative;
-   border: 1px solid #ccc;
    outline: none;
 }

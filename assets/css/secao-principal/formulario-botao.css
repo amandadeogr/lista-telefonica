@@ -1,9 +1,16 @@
 .secao-principal__formulario__botao {
-   text-align: center;
-   margin-top: 1rem;
+   background-color: rgb(255, 255, 255);
+   border: 1px solid #5c64a3;
+   border-radius: 5px;
+   margin-top: 1.4rem;
    padding: .4rem 2rem;
+   text-align: center;
+   transition: .5s;
 }
 
 .secao-principal__formulario__botao:hover {
+   background-color: #5c64a3;
+   color: #fff;
    cursor: pointer;
+   transition: .5s;
 }

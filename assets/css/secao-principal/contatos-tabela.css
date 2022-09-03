@@ -1,0 +1,7 @@
+.secao-principal__contatos__tabela {
+   border-collapse: collapse;
+   table-layout: fixed;
+   width: 100%;
+   border: 1px solid #5c64a3;
+   box-shadow: 0 5px 15px #5c64a3;
+}
